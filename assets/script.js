@@ -23,20 +23,22 @@ $(document).ready(function () {
       const hourBlock = parseInt($(this).attr("id").split("-")[1]);
       if (hourBlock < currentTime) {
         $(this).addClass("past");
-      } else if (hourBlock === currentTime) {
+      } else if (hourBlock == currentTime) {
         $(this).removeClass("past");
         $(this).addClass("present");
       } else {
         $(this).removeClass("past");
-        // $(this).removeClass("present");
+        $(this).removeClass("present");
         $(this).addClass("future");
       }
     });
   }
 
   compareTime();
-  let interval = setInterval(compareTime, 15000);
-  interval();
+  let interval;
+
+  interval = setInterval(compareTime, 15000);
+
   // create function for if statement to compare time-block time to dayjs time. - use setInterval!
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
