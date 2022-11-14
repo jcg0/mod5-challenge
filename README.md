@@ -1,5 +1,8 @@
 # 05 Third-Party APIs: Work Day Scheduler
 
+https://jcg0.github.io/mod5-challenge/
+https://github.com/jcg0/mod5-challenge
+
 During this challenge I needed to use jquery to target the id and class attributes to change the display of the calendar. I also needed to set the localStorage and get the localStorage to save and retrieve the values entered into the calendar. This was the second toughest thing for me to figure out. I had the right concept but didnt execute correctly the first way. Comparing the times and adding or removing the classes was the toughest part in this challenge. Before help I did not think to use setInterval.
 
 ## User Story
